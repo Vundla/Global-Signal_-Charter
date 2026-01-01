@@ -1,0 +1,122 @@
+# Fly.io Deployment Configuration
+app = "global-sovereign-api"
+primary_region = "jnb"  # Johannesburg
+
+[build]
+  [build.args]
+    MIX_ENV = "prod"
+    NODE_ENV = "production"
+
+[deploy]
+  release_command = "/app/bin/migrate"
+  strategy = "bluegreen"
+
+[env]
+  PHX_HOST = "api.sovereign.network"
+  PORT = "8080"
+  POOL_SIZE = "10"
+  ECTO_IPV6 = "true"
+  ERL_AFLAGS = "-proto_dist inet6_tcp"
+  CLUSTER_STRATEGY = "fly"
+
+[experimental]
+  auto_rollback = true
+  enable_consul = false
+  enable_etcd = false
+
+[[services]]
+  protocol = "tcp"
+  internal_port = 8080
+  processes = ["app"]
+
+  [[services.ports]]
+    port = 80
+    handlers = ["http"]
+    force_https = true
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+  
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 1000
+    soft_limit = 800
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+    grace_period = "10s"
+    restart_limit = 6
+
+  [[services.http_checks]]
+    interval = "10s"
+    timeout = "2s"
+    grace_period = "5s"
+    method = "get"
+    path = "/health"
+    protocol = "http"
+    restart_limit = 0
+    
+    [services.http_checks.headers]
+      User-Agent = "Fly Health Check"
+
+# Multi-region deployment
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 2
+  memory_mb = 2048
+
+# Regions with replica counts
+[regions]
+  jnb = 2  # Johannesburg (primary)
+  fra = 1  # Frankfurt (secondary)
+  lhr = 1  # London (secondary)
+
+# Autoscaling
+[autoscaling]
+  enabled = true
+  min_count = 2
+  max_count = 10
+  
+  [[autoscaling.metrics]]
+    type = "cpu"
+    target = 70
+  
+  [[autoscaling.metrics]]
+    type = "memory"
+    target = 80
+
+# Postgres configuration
+[[postgres]]
+  connection_string_env = "DATABASE_URL"
+  initial_cluster_size = 3
+  
+  [postgres.ha]
+    enabled = true
+    standby_count = 2
+  
+  [postgres.backup]
+    enabled = true
+    schedule = "0 2 * * *"  # Daily at 2 AM
+    retention_days = 30
+
+# Volumes for persistent storage
+[[mounts]]
+  source = "sovereign_data"
+  destination = "/data"
+  initial_size = "50GB"
+
+# Metrics and monitoring
+[metrics]
+  port = 9091
+  path = "/metrics"
+
+# Secret management
+[secrets]
+  # Set via: fly secrets set SECRET_KEY_BASE=...
+  # Required secrets:
+  # - SECRET_KEY_BASE
+  # - DATABASE_URL
+  # - CLUSTER_SECRET
+  # - GUARDIAN_SECRET_KEY
