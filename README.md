@@ -1,15 +1,32 @@
-# Global Sovereign Offline System
+# Global Sovereign Covenant
 ## The Charter of Global Connectivity
 
-> *"We raise a tower of stored light. When the world goes dark, our archive glows."*
+> *"We raise a tower of stored light. When the world goes dark, our archive glows."*  
+> *"From 56 nations, the covenant spreads to 195. Each new nation adds a voice to the collective chorus."*
 
 ### Vision
 
-A fault-tolerant, offline-first infrastructure system where each nation contributes 0.01% of GDP to build sovereign connectivity towers for struggling communities worldwide. When the global internet fails, local communities remain connected through cached fibre-speed networks.
+A fault-tolerant, offline-first infrastructure system where each nation contributes 0.01% of GDP to build sovereign connectivity towers for struggling communities worldwide. Phase 1-3 foundation complete. Phase 4 launching Jan 2026: Scaling to 195 nations, 10M+ users, 6 global regions.
 
 ### Philosophy: "Crash It If You Can"
 
-Built on Erlang/BEAM principles of supervision, isolation, and graceful recovery. Every component is designed to fail safely and recover autonomously.
+Built on Erlang/BEAM principles of supervision, isolation, and graceful recovery. Every component is designed to fail safely and recover autonomously. Infrastructure blended with spiritual philosophy through Codex verses.
+
+### Current Status: 🚀 Phase 4 Launching
+
+| Phase | Status | Scope | Date |
+|-------|--------|-------|------|
+| **Phase 1: Foundation** | ✅ Complete | 56 countries, REST API, frontend, 13 tests | Completed |
+| **Phase 2: Economic Orchestration** | ✅ Complete | 6 sectors, 27 projects, sector APIs | Completed |
+| **Phase 3: Observability & Codex** | ✅ Complete | PromEx, Prometheus, Grafana, 10 verses | Completed |
+| **Phase 4: Global Expansion** | 🚀 Launching | 195 nations, 500+ projects, 10M users, mobile | Jan-Aug 2026 |
+
+**Quick Links**:
+- 📋 [Phase Overview](./PHASES_OVERVIEW.md) - Complete roadmap across all phases
+- 🚀 [Phase 4 Plan](./PHASE4_PLAN.md) - 8-month expansion roadmap
+- 📊 [Phase 4 Tracker](./PHASE4_TRACKER.md) - 96-task implementation tracker
+- 📱 [Mobile Architecture](./PHASE4_MOBILE_ARCHITECTURE.md) - React Native design
+- ☁️ [Infrastructure](./terraform/PHASE4_INFRASTRUCTURE.md) - Terraform multi-region
 
 ---
 
