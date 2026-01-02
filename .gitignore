@@ -65,3 +65,10 @@ docker-compose.override.yml
 # Misc
 .prettierignore
 .eslintignore
+
+# Local binaries and samples
+alloy-linux-amd64
+alloy-linux-amd64.zip
+backend/hello-fly/
+frontend/hello-fly/
+backend/erl_crash.dump
