@@ -8,21 +8,31 @@
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "@sveltejs/adapter-auto": "^3.2.5",
     "@sveltejs/adapter-node": "^5.2.9",
     "@sveltejs/kit": "^2.7.2",
     "@sveltejs/vite-plugin-svelte": "^4.0.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/svelte": "^5.3.1",
     "@types/eslint": "^9.6.1",
     "eslint": "^9.15.0",
     "eslint-plugin-svelte": "^2.46.1",
+    "happy-dom": "^20.0.11",
+    "jsdom": "^27.4.0",
     "svelte": "^5.2.7",
     "svelte-check": "^4.0.8",
     "typescript": "^5.7.2",
     "vite": "^6.0.1",
-    "vite-plugin-pwa": "^0.20.5"
+    "vite-plugin-pwa": "^0.20.5",
+    "vitest": "^4.0.16"
   },
   "type": "module",
   "dependencies": {

@@ -57,7 +57,8 @@ class OfflineDatabase {
 	// Queue operations
 	async queueOperation(operation: Omit<QueuedOperation, 'id'>): Promise<number> {
 		const db = await this.getDB();
-		return db.add('queue', operation);
+		const result = await db.add('queue', operation);
+		return result as number;
 	}
 
 	async getQueuedOperations(): Promise<QueuedOperation[]> {
@@ -144,10 +145,11 @@ export const offlineDB = new OfflineDatabase();
 
 // Background sync helper
 export async function registerBackgroundSync() {
-	if ('serviceWorker' in navigator && 'sync' in ServiceWorkerRegistration.prototype) {
+	if ('serviceWorker' in navigator && 'SyncManager' in window) {
 		try {
 			const registration = await navigator.serviceWorker.ready;
-			await registration.sync.register('sync-operations');
+			// Type assertion for sync API
+			await (registration as any).sync.register('sync-operations');
 			console.log('[OfflineDB] Background sync registered');
 		} catch (error) {
 			console.error('[OfflineDB] Background sync failed:', error);

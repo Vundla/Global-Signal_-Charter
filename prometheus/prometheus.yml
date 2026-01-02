@@ -1,0 +1,31 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'global_sovereign'
+    environment: 'development'
+
+# Load alert rules
+rule_files:
+  - 'alerts.yml'
+
+# Alert routing to Alertmanager
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['alertmanager:9093']
+
+# Scrape configurations
+scrape_configs:
+  # Scrape Global Sovereign Phoenix app metrics
+  - job_name: 'global_sovereign'
+    static_configs:
+      - targets: ['host.docker.internal:4000']
+    metrics_path: '/metrics'
+    scrape_interval: 15s
+    scrape_timeout: 10s
+
+  # Scrape Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']

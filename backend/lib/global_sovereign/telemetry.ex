@@ -29,9 +29,11 @@ defmodule GlobalSovereign.Telemetry do
   end
 
   def measure_vm do
+    memory_data = :erlang.memory() |> Enum.into(%{})
+    
     :telemetry.execute(
       [:vm, :memory],
-      :erlang.memory(),
+      memory_data,
       %{}
     )
     

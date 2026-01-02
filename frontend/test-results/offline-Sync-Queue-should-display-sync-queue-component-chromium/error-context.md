@@ -1,0 +1,83 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img [ref=e9]
+        - generic [ref=e11]:
+          - heading "Offline Management" [level=1] [ref=e12]
+          - paragraph [ref=e13]: Work seamlessly even without internet connection
+      - generic [ref=e15]:
+        - generic [ref=e17]: 🟢 Online
+        - button "🔄 Sync" [ref=e18]
+    - paragraph [ref=e19]: Our offline-first architecture ensures you can continue working even when internet connectivity is limited. Changes are queued and automatically synchronized when you're back online.
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - heading "Connection Status" [level=2] [ref=e23]
+      - generic [ref=e25]: Online - Never synced
+    - button "Sync Now" [ref=e26]:
+      - img [ref=e27]
+      - text: Sync Now
+  - generic [ref=e31]:
+    - heading "📥 Sync Queue" [level=3] [ref=e33]
+    - generic [ref=e34]:
+      - paragraph [ref=e35]: ✓ All changes synced
+      - text: Changes will appear here when offline
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - heading "💾 Cache Manager" [level=3] [ref=e40]
+      - generic [ref=e41]: 0 Bytes
+    - generic [ref=e42]:
+      - generic [ref=e43]: "Total Size: 0 Bytes"
+      - generic [ref=e44]: "Cached Items: 0"
+      - generic [ref=e45]: "Last Cleared: Never"
+    - generic [ref=e46]:
+      - heading "What's Cached?" [level=4] [ref=e47]
+      - list [ref=e48]:
+        - listitem [ref=e49]: 🖼️ Static assets (images, fonts, CSS, JS)
+        - listitem [ref=e50]: 📊 API responses and data
+        - listitem [ref=e51]: 🗺️ Offline maps and resources
+        - listitem [ref=e52]: 📝 User-created content drafts
+    - button "Clear All Cache" [ref=e54]
+    - paragraph [ref=e55]: ⚠️ Clearing cache will remove all offline data and require re-download
+  - generic [ref=e56]:
+    - generic [ref=e57]:
+      - heading "Offline Capabilities" [level=2] [ref=e58]:
+        - img [ref=e59]
+        - text: Offline Capabilities
+      - list [ref=e61]:
+        - listitem [ref=e62]: ✓ Read and browse all previously loaded content
+        - listitem [ref=e63]: ✓ Create and edit data locally
+        - listitem [ref=e64]: ✓ Queue changes for automatic sync
+        - listitem [ref=e65]: ✓ Access cached API responses
+        - listitem [ref=e66]: ✓ Background synchronization when online
+    - generic [ref=e67]:
+      - heading "How It Works" [level=2] [ref=e68]:
+        - img [ref=e69]
+        - text: How It Works
+      - list [ref=e71]:
+        - listitem [ref=e72]: 1. Data is automatically cached as you browse
+        - listitem [ref=e73]: 2. When offline, changes are stored locally
+        - listitem [ref=e74]: 3. App detects when you're back online
+        - listitem [ref=e75]: 4. Queued changes sync automatically
+        - listitem [ref=e76]: 5. Conflicts are resolved intelligently
+  - generic [ref=e77]:
+    - heading "💡 Best Practices" [level=2] [ref=e78]
+    - generic [ref=e79]:
+      - generic [ref=e80]:
+        - heading "When Working Offline:" [level=3] [ref=e81]
+        - list [ref=e82]:
+          - listitem [ref=e83]: • Make frequent saves to preserve your work
+          - listitem [ref=e84]: • Check the sync queue before going offline
+          - listitem [ref=e85]: • Avoid large file uploads without connection
+          - listitem [ref=e86]: • Monitor storage usage regularly
+      - generic [ref=e87]:
+        - heading "When Back Online:" [level=3] [ref=e88]
+        - list [ref=e89]:
+          - listitem [ref=e90]: • Wait for sync to complete before making new changes
+          - listitem [ref=e91]: • Review synced data for any conflicts
+          - listitem [ref=e92]: • Clear old cache periodically
+          - listitem [ref=e93]: • Check for app updates
+```

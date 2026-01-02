@@ -1,0 +1,77 @@
+global:
+  resolve_timeout: 5m
+  # Placeholder Slack webhook to satisfy URL parsing; replace with real secret in deployment
+  slack_api_url: 'https://hooks.slack.com/services/REPLACE_ME'
+
+# Route configuration
+route:
+  receiver: 'default'
+  group_by: ['alertname', 'severity']
+  group_wait: 10s
+  group_interval: 5m
+  repeat_interval: 4h
+  
+  routes:
+    # Critical alerts - page immediately
+    - match:
+        severity: critical
+      receiver: 'critical-pager'
+      continue: true
+
+    # High priority - notify on-call
+    - match:
+        severity: high
+      receiver: 'high-priority'
+      continue: true
+
+    # Medium/Low - send to Slack
+    - match:
+        severity: medium
+      receiver: 'default'
+
+    - match:
+        severity: low
+      receiver: 'default'
+
+# Receivers
+receivers:
+  # Default receiver (Slack)
+  - name: 'default'
+    slack_configs:
+      - channel: '#alerts'
+        title: 'Global Sovereign Alert'
+        text: '{{ range .Alerts }}{{ .Annotations.summary }}\n{{ .Annotations.description }}\nPlaybook: {{ .Annotations.playbook }}{{ end }}'
+
+  # Critical pager (PagerDuty integration)
+  - name: 'critical-pager'
+    pagerduty_configs:
+      - service_key: 'YOUR_PAGERDUTY_KEY'  # Replace with actual key
+        description: '{{ .CommonAnnotations.summary }}'
+
+  # High priority (Slack + email)
+  - name: 'high-priority'
+    slack_configs:
+      - channel: '#on-call'
+        title: 'HIGH: {{ .CommonAnnotations.summary }}'
+        text: '{{ .CommonAnnotations.description }}\nPlaybook: {{ .CommonAnnotations.playbook }}'
+    email_configs:
+      - to: 'oncall@sovereign.network'
+        from: 'alerts@sovereign.network'
+        smarthost: 'smtp.sendgrid.net:587'
+        auth_username: 'apikey'
+        auth_password: 'YOUR_SENDGRID_KEY'  # Replace with actual key
+
+# Inhibition rules
+inhibit_rules:
+  # Inhibit low severity if high severity is firing
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'low'
+    equal: ['alertname']
+
+  - source_match:
+      severity: 'high'
+    target_match:
+      severity: 'medium'
+    equal: ['alertname']

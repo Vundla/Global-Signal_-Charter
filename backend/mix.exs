@@ -66,7 +66,7 @@ defmodule GlobalSovereign.MixProject do
       {:absinthe_phoenix, "~> 2.0"},
       
       # Authentication & Security
-      # {:guardian, "~> 2.4"}, # Disabled temporarily - jose dependency compilation issues
+      {:plug_attack, "~> 0.4"},
       {:comeonin, "~> 5.4"},
       {:bcrypt_elixir, "~> 3.1"},
       # {:x509, "~> 0.9"}, # Certificate management - disabled due to Erlang version incompatibility
@@ -79,6 +79,7 @@ defmodule GlobalSovereign.MixProject do
       {:opentelemetry_exporter, "~> 1.7"},
       {:opentelemetry_phoenix, "~> 1.2"},
       {:opentelemetry_ecto, "~> 1.2"},
+      {:logger_json, "~> 5.1"},
       
       # Distributed Systems
       {:libcluster, "~> 3.4"},

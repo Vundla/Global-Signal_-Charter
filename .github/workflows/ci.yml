@@ -1,0 +1,145 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  MIX_ENV: test
+  JWT_SECRET: test_secret_key_for_ci_minimum_32_characters
+
+jobs:
+  backend:
+    name: Backend Tests
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: global_sovereign_test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Elixir
+        uses: erlef/setup-beam@v1
+        with:
+          elixir-version: '1.15.4'
+          otp-version: '26.1'
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            backend/deps
+            backend/_build
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          restore-keys: ${{ runner.os }}-mix-
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          mix local.hex --force
+          mix local.rebar --force
+          mix deps.get
+
+      - name: Compile code
+        run: cd backend && mix compile --warnings-as-errors
+
+      - name: Run database migrations
+        run: cd backend && mix ecto.create && mix ecto.migrate
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/global_sovereign_test
+
+      - name: Run tests with coverage
+        run: cd backend && mix test --cover
+        env:
+          DATABASE_URL: postgresql://postgres:postgres@localhost:5432/global_sovereign_test
+
+      - name: Run security checks
+        run: cd backend && mix sobelow --config
+
+      - name: Check code formatting
+        run: cd backend && mix format --check-formatted
+
+      - name: Run Credo
+        run: cd backend && mix credo --strict
+
+  frontend:
+    name: Frontend Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        run: cd frontend && npm ci --legacy-peer-deps
+
+      - name: Type check
+        run: cd frontend && npm run check
+
+      - name: Run unit tests
+        run: cd frontend && npm run test
+
+      - name: Install Playwright browsers
+        run: cd frontend && npx playwright install --with-deps chromium
+
+      - name: Run E2E tests
+        run: cd frontend && npx playwright test
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: frontend/playwright-report/
+          retention-days: 7
+
+  build:
+    name: Build Check
+    runs-on: ubuntu-latest
+    needs: [backend, frontend]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build backend
+        run: |
+          cd backend
+          mix local.hex --force
+          mix local.rebar --force
+          mix deps.get
+          MIX_ENV=prod mix compile
+
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm ci --legacy-peer-deps
+          npm run build
+
+      - name: Check build artifacts
+        run: |
+          test -d backend/_build/prod
+          test -d frontend/.svelte-kit/output

@@ -1,0 +1,1557 @@
+{
+  "metadata": {
+    "generated": "2026-01-02T12:43:28.727Z",
+    "phase": 4,
+    "total_countries": 177,
+    "total_gdp_usd_billions": "104087.59",
+    "total_covenant_contribution_usd_millions": "1040.88"
+  },
+  "countries": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "gdp_usd_billions": 27360,
+      "continent": "North America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "273.60"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "gdp_usd_billions": 17799,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "177.99"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "gdp_usd_billions": 4310,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "43.10"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "gdp_usd_billions": 4230,
+      "continent": "Asia",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "42.30"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "gdp_usd_billions": 3736,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "37.36"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "gdp_usd_billions": 3330,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "33.30"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "gdp_usd_billions": 3030,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "30.30"
+    },
+    {
+      "code": "ITA",
+      "name": "Italy",
+      "gdp_usd_billions": 2010,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "20.10"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "gdp_usd_billions": 2140,
+      "continent": "North America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "21.40"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "gdp_usd_billions": 1780,
+      "continent": "Asia",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "17.80"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "gdp_usd_billions": 1840,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "18.40"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "gdp_usd_billions": 1390,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "13.90"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "gdp_usd_billions": 1738,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "17.38"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "gdp_usd_billions": 1290,
+      "continent": "North America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "12.90"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "gdp_usd_billions": 1320,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "13.20"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "gdp_usd_billions": 1120,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "11.20"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "gdp_usd_billions": 1090,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "10.90"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "gdp_usd_billions": 1150,
+      "continent": "Asia",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "11.50"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "gdp_usd_billions": 1020,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "10.20"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "gdp_usd_billions": 890,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "8.90"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "gdp_usd_billions": 611,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "6.11"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "gdp_usd_billions": 598,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "5.98"
+    },
+    {
+      "code": "BEL",
+      "name": "Belgium",
+      "gdp_usd_billions": 694,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "6.94"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "gdp_usd_billions": 632,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "6.32"
+    },
+    {
+      "code": "AUT",
+      "name": "Austria",
+      "gdp_usd_billions": 546,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "5.46"
+    },
+    {
+      "code": "NZL",
+      "name": "New Zealand",
+      "gdp_usd_billions": 250,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "2.50"
+    },
+    {
+      "code": "DNK",
+      "name": "Denmark",
+      "gdp_usd_billions": 406,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "4.06"
+    },
+    {
+      "code": "FIN",
+      "name": "Finland",
+      "gdp_usd_billions": 297,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "2.97"
+    },
+    {
+      "code": "IRL",
+      "name": "Ireland",
+      "gdp_usd_billions": 530,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "5.30"
+    },
+    {
+      "code": "HKG",
+      "name": "Hong Kong",
+      "gdp_usd_billions": 398,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "3.98"
+    },
+    {
+      "code": "SGP",
+      "name": "Singapore",
+      "gdp_usd_billions": 591,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.91"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "gdp_usd_billions": 466,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "4.66"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "gdp_usd_billions": 505,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.05"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "gdp_usd_billions": 529,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.29"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "gdp_usd_billions": 432,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "4.32"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "gdp_usd_billions": 376,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "3.76"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "gdp_usd_billions": 417,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "4.17"
+    },
+    {
+      "code": "LKA",
+      "name": "Sri Lanka",
+      "gdp_usd_billions": 84,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.84"
+    },
+    {
+      "code": "KAZ",
+      "name": "Kazakhstan",
+      "gdp_usd_billions": 204,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "2.04"
+    },
+    {
+      "code": "UZB",
+      "name": "Uzbekistan",
+      "gdp_usd_billions": 83,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.83"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "gdp_usd_billions": 405,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "4.05"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "gdp_usd_billions": 476,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "4.76"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "gdp_usd_billions": 477,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "4.77"
+    },
+    {
+      "code": "KEN",
+      "name": "Kenya",
+      "gdp_usd_billions": 119,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "1.19"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "gdp_usd_billions": 123,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "1.23"
+    },
+    {
+      "code": "GHA",
+      "name": "Ghana",
+      "gdp_usd_billions": 79,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.79"
+    },
+    {
+      "code": "TZA",
+      "name": "Tanzania",
+      "gdp_usd_billions": 87,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.87"
+    },
+    {
+      "code": "UGA",
+      "name": "Uganda",
+      "gdp_usd_billions": 47,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.47"
+    },
+    {
+      "code": "MAR",
+      "name": "Morocco",
+      "gdp_usd_billions": 142,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "1.42"
+    },
+    {
+      "code": "TUN",
+      "name": "Tunisia",
+      "gdp_usd_billions": 73,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.73"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "gdp_usd_billions": 2117,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "21.17"
+    },
+    {
+      "code": "CHL",
+      "name": "Chile",
+      "gdp_usd_billions": 282,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "2.82"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "gdp_usd_billions": 328,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "3.28"
+    },
+    {
+      "code": "PER",
+      "name": "Peru",
+      "gdp_usd_billions": 223,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "2.23"
+    },
+    {
+      "code": "ECU",
+      "name": "Ecuador",
+      "gdp_usd_billions": 108,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "1.08"
+    },
+    {
+      "code": "VEN",
+      "name": "Venezuela",
+      "gdp_usd_billions": 130,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "1.30"
+    },
+    {
+      "code": "BOL",
+      "name": "Bolivia",
+      "gdp_usd_billions": 51,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.51"
+    },
+    {
+      "code": "URY",
+      "name": "Uruguay",
+      "gdp_usd_billions": 77,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.77"
+    },
+    {
+      "code": "PRY",
+      "name": "Paraguay",
+      "gdp_usd_billions": 47,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.47"
+    },
+    {
+      "code": "CUB",
+      "name": "Cuba",
+      "gdp_usd_billions": 137,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "1.37"
+    },
+    {
+      "code": "CRI",
+      "name": "Costa Rica",
+      "gdp_usd_billions": 81,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.81"
+    },
+    {
+      "code": "PAN",
+      "name": "Panama",
+      "gdp_usd_billions": 96,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.96"
+    },
+    {
+      "code": "GTM",
+      "name": "Guatemala",
+      "gdp_usd_billions": 97,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.97"
+    },
+    {
+      "code": "HND",
+      "name": "Honduras",
+      "gdp_usd_billions": 52,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.52"
+    },
+    {
+      "code": "SLV",
+      "name": "El Salvador",
+      "gdp_usd_billions": 36,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.36"
+    },
+    {
+      "code": "JAM",
+      "name": "Jamaica",
+      "gdp_usd_billions": 15,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.15"
+    },
+    {
+      "code": "DOM",
+      "name": "Dominican Republic",
+      "gdp_usd_billions": 99,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.99"
+    },
+    {
+      "code": "HTI",
+      "name": "Haiti",
+      "gdp_usd_billions": 20,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.20"
+    },
+    {
+      "code": "TTO",
+      "name": "Trinidad and Tobago",
+      "gdp_usd_billions": 28,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.28"
+    },
+    {
+      "code": "BHS",
+      "name": "Bahamas",
+      "gdp_usd_billions": 16,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.16"
+    },
+    {
+      "code": "CZE",
+      "name": "Czech Republic",
+      "gdp_usd_billions": 318,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "3.18"
+    },
+    {
+      "code": "GRC",
+      "name": "Greece",
+      "gdp_usd_billions": 219,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "2.19"
+    },
+    {
+      "code": "PRT",
+      "name": "Portugal",
+      "gdp_usd_billions": 267,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "2.67"
+    },
+    {
+      "code": "HUN",
+      "name": "Hungary",
+      "gdp_usd_billions": 230,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "2.30"
+    },
+    {
+      "code": "ROU",
+      "name": "Romania",
+      "gdp_usd_billions": 301,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "3.01"
+    },
+    {
+      "code": "BGR",
+      "name": "Bulgaria",
+      "gdp_usd_billions": 95,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.95"
+    },
+    {
+      "code": "HRV",
+      "name": "Croatia",
+      "gdp_usd_billions": 76,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.76"
+    },
+    {
+      "code": "SVN",
+      "name": "Slovenia",
+      "gdp_usd_billions": 76,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.76"
+    },
+    {
+      "code": "SVK",
+      "name": "Slovakia",
+      "gdp_usd_billions": 143,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "1.43"
+    },
+    {
+      "code": "UKR",
+      "name": "Ukraine",
+      "gdp_usd_billions": 206,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "2.06"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "gdp_usd_billions": 505,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.05"
+    },
+    {
+      "code": "JOR",
+      "name": "Jordan",
+      "gdp_usd_billions": 48,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.48"
+    },
+    {
+      "code": "IRN",
+      "name": "Iran",
+      "gdp_usd_billions": 411,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "4.11"
+    },
+    {
+      "code": "IRQ",
+      "name": "Iraq",
+      "gdp_usd_billions": 276,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "2.76"
+    },
+    {
+      "code": "ARE",
+      "name": "United Arab Emirates",
+      "gdp_usd_billions": 509,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.09"
+    },
+    {
+      "code": "QAT",
+      "name": "Qatar",
+      "gdp_usd_billions": 220,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "2.20"
+    },
+    {
+      "code": "KWT",
+      "name": "Kuwait",
+      "gdp_usd_billions": 189,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "1.89"
+    },
+    {
+      "code": "OMN",
+      "name": "Oman",
+      "gdp_usd_billions": 113,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "1.13"
+    },
+    {
+      "code": "LBN",
+      "name": "Lebanon",
+      "gdp_usd_billions": 22,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.22"
+    },
+    {
+      "code": "ISR",
+      "name": "Israel",
+      "gdp_usd_billions": 507,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "5.07"
+    },
+    {
+      "code": "FJI",
+      "name": "Fiji",
+      "gdp_usd_billions": 11,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.11"
+    },
+    {
+      "code": "VUT",
+      "name": "Vanuatu",
+      "gdp_usd_billions": 4,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.04"
+    },
+    {
+      "code": "WSM",
+      "name": "Samoa",
+      "gdp_usd_billions": 1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "KIR",
+      "name": "Kiribati",
+      "gdp_usd_billions": 0.2,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "MHL",
+      "name": "Marshall Islands",
+      "gdp_usd_billions": 0.3,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "MUS",
+      "name": "Mauritius",
+      "gdp_usd_billions": 18,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.18"
+    },
+    {
+      "code": "SYC",
+      "name": "Seychelles",
+      "gdp_usd_billions": 2,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "COM",
+      "name": "Comoros",
+      "gdp_usd_billions": 1,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "CPV",
+      "name": "Cape Verde",
+      "gdp_usd_billions": 2,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "STP",
+      "name": "São Tomé and Príncipe",
+      "gdp_usd_billions": 0.7,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "ISL",
+      "name": "Iceland",
+      "gdp_usd_billions": 33,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.33"
+    },
+    {
+      "code": "LUX",
+      "name": "Luxembourg",
+      "gdp_usd_billions": 87,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.87"
+    },
+    {
+      "code": "MLT",
+      "name": "Malta",
+      "gdp_usd_billions": 24,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.24"
+    },
+    {
+      "code": "CYP",
+      "name": "Cyprus",
+      "gdp_usd_billions": 32,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.32"
+    },
+    {
+      "code": "AGO",
+      "name": "Angola",
+      "gdp_usd_billions": 116,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "1.16"
+    },
+    {
+      "code": "MOZ",
+      "name": "Mozambique",
+      "gdp_usd_billions": 40,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.40"
+    },
+    {
+      "code": "ZWE",
+      "name": "Zimbabwe",
+      "gdp_usd_billions": 28,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.28"
+    },
+    {
+      "code": "ZMB",
+      "name": "Zambia",
+      "gdp_usd_billions": 35,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.35"
+    },
+    {
+      "code": "BWA",
+      "name": "Botswana",
+      "gdp_usd_billions": 23,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.23"
+    },
+    {
+      "code": "NAM",
+      "name": "Namibia",
+      "gdp_usd_billions": 14,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.14"
+    },
+    {
+      "code": "LSO",
+      "name": "Lesotho",
+      "gdp_usd_billions": 3,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "SWZ",
+      "name": "Eswatini",
+      "gdp_usd_billions": 4,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.04"
+    },
+    {
+      "code": "MDG",
+      "name": "Madagascar",
+      "gdp_usd_billions": 42,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.42"
+    },
+    {
+      "code": "MWI",
+      "name": "Malawi",
+      "gdp_usd_billions": 13,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.13"
+    },
+    {
+      "code": "AFG",
+      "name": "Afghanistan",
+      "gdp_usd_billions": 20,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.20"
+    },
+    {
+      "code": "TJK",
+      "name": "Tajikistan",
+      "gdp_usd_billions": 10,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.10"
+    },
+    {
+      "code": "KGZ",
+      "name": "Kyrgyzstan",
+      "gdp_usd_billions": 9,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.09"
+    },
+    {
+      "code": "TKM",
+      "name": "Turkmenistan",
+      "gdp_usd_billions": 93,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.93"
+    },
+    {
+      "code": "MNG",
+      "name": "Mongolia",
+      "gdp_usd_billions": 18,
+      "continent": "Asia",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.18"
+    },
+    {
+      "code": "KHM",
+      "name": "Cambodia",
+      "gdp_usd_billions": 44,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.44"
+    },
+    {
+      "code": "LAO",
+      "name": "Laos",
+      "gdp_usd_billions": 20,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.20"
+    },
+    {
+      "code": "MMR",
+      "name": "Myanmar",
+      "gdp_usd_billions": 87,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.87"
+    },
+    {
+      "code": "BTN",
+      "name": "Bhutan",
+      "gdp_usd_billions": 8,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.08"
+    },
+    {
+      "code": "NPL",
+      "name": "Nepal",
+      "gdp_usd_billions": 53,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.53"
+    },
+    {
+      "code": "AIA",
+      "name": "Anguilla",
+      "gdp_usd_billions": 0.3,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "ATG",
+      "name": "Antigua and Barbuda",
+      "gdp_usd_billions": 2,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "BRB",
+      "name": "Barbados",
+      "gdp_usd_billions": 5,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.05"
+    },
+    {
+      "code": "BLZ",
+      "name": "Belize",
+      "gdp_usd_billions": 5,
+      "continent": "Central America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.05"
+    },
+    {
+      "code": "BMU",
+      "name": "Bermuda",
+      "gdp_usd_billions": 7,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.07"
+    },
+    {
+      "code": "BRN",
+      "name": "Brunei",
+      "gdp_usd_billions": 17,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.17"
+    },
+    {
+      "code": "CAY",
+      "name": "Cayman Islands",
+      "gdp_usd_billions": 7,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.07"
+    },
+    {
+      "code": "DMA",
+      "name": "Dominica",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "FSM",
+      "name": "Micronesia",
+      "gdp_usd_billions": 0.4,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "GRL",
+      "name": "Greenland",
+      "gdp_usd_billions": 3,
+      "continent": "North America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "GRD",
+      "name": "Grenada",
+      "gdp_usd_billions": 2,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "GGY",
+      "name": "Guernsey",
+      "gdp_usd_billions": 4,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.04"
+    },
+    {
+      "code": "IMN",
+      "name": "Isle of Man",
+      "gdp_usd_billions": 7,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.07"
+    },
+    {
+      "code": "JEY",
+      "name": "Jersey",
+      "gdp_usd_billions": 6,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.06"
+    },
+    {
+      "code": "KNA",
+      "name": "Saint Kitts and Nevis",
+      "gdp_usd_billions": 2,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "LCA",
+      "name": "Saint Lucia",
+      "gdp_usd_billions": 3,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "MAF",
+      "name": "Sint Maarten",
+      "gdp_usd_billions": 2,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "MNT",
+      "name": "Montserrat",
+      "gdp_usd_billions": 0.1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "NRU",
+      "name": "Nauru",
+      "gdp_usd_billions": 0.1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "PLW",
+      "name": "Palau",
+      "gdp_usd_billions": 0.3,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "PNG",
+      "name": "Papua New Guinea",
+      "gdp_usd_billions": 35,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.35"
+    },
+    {
+      "code": "PRI",
+      "name": "Puerto Rico",
+      "gdp_usd_billions": 110,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "1.10"
+    },
+    {
+      "code": "RWA",
+      "name": "Rwanda",
+      "gdp_usd_billions": 15,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.15"
+    },
+    {
+      "code": "VCT",
+      "name": "Saint Vincent and the Grenadines",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "SLB",
+      "name": "Solomon Islands",
+      "gdp_usd_billions": 2,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "SUR",
+      "name": "Suriname",
+      "gdp_usd_billions": 10,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.10"
+    },
+    {
+      "code": "TWN",
+      "name": "Taiwan",
+      "gdp_usd_billions": 873,
+      "continent": "Asia",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "8.73"
+    },
+    {
+      "code": "TLS",
+      "name": "Timor-Leste",
+      "gdp_usd_billions": 3,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "TON",
+      "name": "Tonga",
+      "gdp_usd_billions": 0.5,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "TKL",
+      "name": "Tokelau",
+      "gdp_usd_billions": 0.02,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "TCA",
+      "name": "Turks and Caicos Islands",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "ATF",
+      "name": "French Southern Territories",
+      "gdp_usd_billions": 0.1,
+      "continent": "Antarctica",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "ABW",
+      "name": "Aruba",
+      "gdp_usd_billions": 3,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "CUW",
+      "name": "Curaçao",
+      "gdp_usd_billions": 3,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "CXR",
+      "name": "Christmas Island",
+      "gdp_usd_billions": 0.2,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "CCK",
+      "name": "Cocos Islands",
+      "gdp_usd_billions": 0.1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "FRO",
+      "name": "Faroe Islands",
+      "gdp_usd_billions": 3,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.03"
+    },
+    {
+      "code": "GIB",
+      "name": "Gibraltar",
+      "gdp_usd_billions": 2,
+      "continent": "Europe",
+      "region": "ams",
+      "covenant_contribution_usd_millions": "0.02"
+    },
+    {
+      "code": "HMD",
+      "name": "Heard Island",
+      "gdp_usd_billions": 0.01,
+      "continent": "Antarctica",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "IOT",
+      "name": "British Indian Ocean Territory",
+      "gdp_usd_billions": 0.1,
+      "continent": "Africa",
+      "region": "jnb",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "NFK",
+      "name": "Norfolk Island",
+      "gdp_usd_billions": 0.1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "PCN",
+      "name": "Pitcairn Islands",
+      "gdp_usd_billions": 0.01,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "SXM",
+      "name": "Saint Martin",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "SPM",
+      "name": "Saint Pierre and Miquelon",
+      "gdp_usd_billions": 0.3,
+      "continent": "North America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "SGS",
+      "name": "South Georgia",
+      "gdp_usd_billions": 0.05,
+      "continent": "South America",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "TKA",
+      "name": "Turks and Caicos",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "VGB",
+      "name": "British Virgin Islands",
+      "gdp_usd_billions": 1,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "VIR",
+      "name": "US Virgin Islands",
+      "gdp_usd_billions": 4,
+      "continent": "Caribbean",
+      "region": "iad",
+      "covenant_contribution_usd_millions": "0.04"
+    },
+    {
+      "code": "WLF",
+      "name": "Wallis and Futuna",
+      "gdp_usd_billions": 0.1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.00"
+    },
+    {
+      "code": "ASM",
+      "name": "American Samoa",
+      "gdp_usd_billions": 0.6,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "GUM",
+      "name": "Guam",
+      "gdp_usd_billions": 7,
+      "continent": "Oceania",
+      "region": "syo",
+      "covenant_contribution_usd_millions": "0.07"
+    },
+    {
+      "code": "MNP",
+      "name": "Northern Mariana Islands",
+      "gdp_usd_billions": 1,
+      "continent": "Oceania",
+      "region": "syd",
+      "covenant_contribution_usd_millions": "0.01"
+    },
+    {
+      "code": "PSE",
+      "name": "Palestine",
+      "gdp_usd_billions": 18,
+      "continent": "Asia",
+      "region": "sin",
+      "covenant_contribution_usd_millions": "0.18"
+    }
+  ],
+  "regional_summary": {
+    "ams": {
+      "country_count": 36,
+      "total_gdp_usd_billions": "25901.00",
+      "total_contribution_usd_millions": "259.01",
+      "top_economies": [
+        {
+          "code": "DEU",
+          "name": "Germany",
+          "gdp": 4310
+        },
+        {
+          "code": "GBR",
+          "name": "United Kingdom",
+          "gdp": 3330
+        },
+        {
+          "code": "FRA",
+          "name": "France",
+          "gdp": 3030
+        }
+      ]
+    },
+    "iad": {
+      "country_count": 49,
+      "total_gdp_usd_billions": "35636.75",
+      "total_contribution_usd_millions": "356.37",
+      "top_economies": [
+        {
+          "code": "USA",
+          "name": "United States",
+          "gdp": 27360
+        },
+        {
+          "code": "CAN",
+          "name": "Canada",
+          "gdp": 2140
+        },
+        {
+          "code": "BRA",
+          "name": "Brazil",
+          "gdp": 2117
+        }
+      ]
+    },
+    "syd": {
+      "country_count": 27,
+      "total_gdp_usd_billions": "8946.04",
+      "total_contribution_usd_millions": "89.46",
+      "top_economies": [
+        {
+          "code": "JPN",
+          "name": "Japan",
+          "gdp": 4230
+        },
+        {
+          "code": "KOR",
+          "name": "South Korea",
+          "gdp": 1780
+        },
+        {
+          "code": "AUS",
+          "name": "Australia",
+          "gdp": 1738
+        }
+      ]
+    },
+    "sin": {
+      "country_count": 37,
+      "total_gdp_usd_billions": "31212.00",
+      "total_contribution_usd_millions": "312.12",
+      "top_economies": [
+        {
+          "code": "CHN",
+          "name": "China",
+          "gdp": 17799
+        },
+        {
+          "code": "IND",
+          "name": "India",
+          "gdp": 3736
+        },
+        {
+          "code": "IDN",
+          "name": "Indonesia",
+          "gdp": 1320
+        }
+      ]
+    },
+    "sfo": {
+      "country_count": 0,
+      "total_gdp_usd_billions": "0.00",
+      "total_contribution_usd_millions": "0.00",
+      "top_economies": []
+    },
+    "jnb": {
+      "country_count": 27,
+      "total_gdp_usd_billions": "2384.80",
+      "total_contribution_usd_millions": "23.85",
+      "top_economies": [
+        {
+          "code": "NGA",
+          "name": "Nigeria",
+          "gdp": 477
+        },
+        {
+          "code": "EGY",
+          "name": "Egypt",
+          "gdp": 476
+        },
+        {
+          "code": "ZAF",
+          "name": "South Africa",
+          "gdp": 405
+        }
+      ]
+    }
+  },
+  "projects": {
+    "total": 300,
+    "per_region": 50,
+    "sectors": [
+      "Agriculture",
+      "Minerals",
+      "Energy",
+      "Technology",
+      "Health",
+      "Education"
+    ]
+  }
+}

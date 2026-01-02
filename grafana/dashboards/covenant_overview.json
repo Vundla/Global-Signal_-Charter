@@ -1,0 +1,144 @@
+{
+  "dashboard": {
+    "title": "Covenant Overview",
+    "tags": ["covenant", "business-metrics"],
+    "timezone": "utc",
+    "schemaVersion": 30,
+    "refresh": "30s",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Total Countries",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "global_sovereign_covenant_countries_total",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": {
+              "steps": [
+                { "value": 0, "color": "red" },
+                { "value": 50, "color": "yellow" },
+                { "value": 100, "color": "green" }
+              ]
+            },
+            "unit": "short"
+          }
+        },
+        "gridPos": { "x": 0, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "id": 2,
+        "title": "Total Projects",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "global_sovereign_covenant_projects_total",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": {
+              "steps": [
+                { "value": 0, "color": "red" },
+                { "value": 100, "color": "yellow" },
+                { "value": 500, "color": "green" }
+              ]
+            },
+            "unit": "short"
+          }
+        },
+        "gridPos": { "x": 6, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "id": 3,
+        "title": "Covenant Fund (Total GDP)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "global_sovereign_covenant_fund_total",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": {
+              "steps": [
+                { "value": 0, "color": "red" },
+                { "value": 1000000, "color": "yellow" },
+                { "value": 10000000, "color": "green" }
+              ]
+            },
+            "unit": "currencyUSD",
+            "decimals": 0
+          }
+        },
+        "gridPos": { "x": 12, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "id": 4,
+        "title": "Total Users",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "global_sovereign_users_total",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": {
+              "steps": [
+                { "value": 0, "color": "red" },
+                { "value": 10, "color": "yellow" },
+                { "value": 50, "color": "green" }
+              ]
+            },
+            "unit": "short"
+          }
+        },
+        "gridPos": { "x": 18, "y": 0, "w": 6, "h": 4 }
+      },
+      {
+        "id": 5,
+        "title": "Covenant Fund Growth (1h)",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "global_sovereign_covenant_fund_total",
+            "legendFormat": "Total Fund",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 0, "y": 4, "w": 12, "h": 8 },
+        "yaxes": [
+          { "format": "currencyUSD", "label": "Fund Total" }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "Project Creation Rate",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "rate(global_sovereign_covenant_projects_total[5m]) * 3600",
+            "legendFormat": "Projects/hour",
+            "refId": "A"
+          }
+        ],
+        "gridPos": { "x": 12, "y": 4, "w": 12, "h": 8 },
+        "yaxes": [
+          { "format": "short", "label": "Projects per Hour" }
+        ]
+      }
+    ]
+  }
+}

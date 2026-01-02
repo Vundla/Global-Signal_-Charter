@@ -11,10 +11,20 @@ defmodule GlobalSovereign.Application do
 
   @impl true
   def start(_type, _args) do
+    # Configure OpenTelemetry batch processor (skip in tests)
+    if Mix.env() != :test do
+      :otel_batch_processor.set_exporter(:otlp, %{
+        protocol: :grpc,
+        endpoints: [{~c"localhost", 4317}]
+      })
+    end
+
+    prom_ex_child = if Mix.env() == :test, do: [], else: [GlobalSovereign.PromEx]
+
     children = [
       # Telemetry supervisor (must start first for metrics)
-      GlobalSovereign.Telemetry,
-      
+      GlobalSovereign.Telemetry
+    ] ++ prom_ex_child ++ [
       # Database repositories
       GlobalSovereign.Repo,
       # GlobalSovereign.CassandraRepo, # TODO: Add Cassandra support

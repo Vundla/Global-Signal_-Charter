@@ -16,10 +16,19 @@ config :global_sovereign, GlobalSovereignWeb.Endpoint,
   pubsub_server: GlobalSovereign.PubSub,
   live_view: [signing_salt: "ubuntu_net_global"]
 
-# Configures Elixir's Logger
+# Configures Elixir's Logger with structured JSON output
+config :logger, :default_handler,
+  config: [
+    formatter: {LoggerJSON.Formatters.BasicLogger, metadata: :all}
+  ]
+
+config :logger,
+  backends: [LoggerJSON],
+  level: :info
+
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+  metadata: [:request_id, :trace_id, :user_id, :role, :status, :duration]
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason

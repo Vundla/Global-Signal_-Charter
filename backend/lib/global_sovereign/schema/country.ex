@@ -54,5 +54,11 @@ defmodule GlobalSovereign.Schema.Country do
     end
   end
 
-  def calculate_contribution(changeset), do: changeset
+  def calculate_contribution(changeset) when is_struct(changeset, Ecto.Changeset), do: changeset
+  
+  @doc """
+  Calculates contribution for a given GDP value.
+  Returns 0.01% of the GDP.
+  """
+  def calculate_contribution(gdp) when is_integer(gdp), do: div(gdp, 10000)
 end

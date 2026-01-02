@@ -1,0 +1,116 @@
+groups:
+  - name: global_sovereign_alerts
+    interval: 30s
+    rules:
+      # Critical: High 5xx error rate
+      - alert: HighErrorRate
+        expr: |
+          rate(phoenix_http_request_total{status=~"5.."}[5m]) 
+          / 
+          rate(phoenix_http_request_total[5m]) 
+          > 0.05
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "High 5xx error rate detected"
+          description: "More than 5% of requests are returning 5xx errors for 5 minutes. Current rate: {{ $value | humanizePercentage }}"
+          playbook: "See RUNBOOK.md Section 4: Alert Playbooks > High 5xx Error Rate"
+
+      # High: Covenant fund drop > 10%
+      - alert: CovenantFundDrop
+        expr: |
+          (
+            global_sovereign_covenant_fund_total 
+            - 
+            global_sovereign_covenant_fund_total offset 1h
+          ) 
+          / 
+          global_sovereign_covenant_fund_total offset 1h 
+          < -0.10
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "Covenant fund dropped significantly"
+          description: "Covenant fund decreased by more than 10% in the last hour. Current fund: {{ $value }}"
+          playbook: "See RUNBOOK.md Section 4: Alert Playbooks > Covenant Fund Drop"
+
+      # High: NATS stream lag
+      - alert: NATSStreamLag
+        expr: |
+          nats_jetstream_stream_lag > 1000
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "NATS stream has high message lag"
+          description: "NATS stream {{ $labels.stream }} has more than 1000 pending messages. Current lag: {{ $value }}"
+          playbook: "See RUNBOOK.md Section 4: Alert Playbooks > NATS Stream Lag"
+
+      # High: Database query latency
+      - alert: SlowDatabaseQueries
+        expr: |
+          histogram_quantile(0.95, 
+            rate(ecto_query_duration_seconds_bucket[5m])
+          ) > 0.5
+        for: 5m
+        labels:
+          severity: high
+        annotations:
+          summary: "Database queries are slow"
+          description: "95th percentile query latency is above 500ms. Current p95: {{ $value }}s"
+          playbook: "See RUNBOOK.md Section 4: Alert Playbooks > Database Query Latency"
+
+      # Medium: High memory usage
+      - alert: HighMemoryUsage
+        expr: |
+          vm_memory_total_bytes 
+          / 
+          (1024 * 1024 * 1024) 
+          > 1.6
+        for: 10m
+        labels:
+          severity: medium
+        annotations:
+          summary: "BEAM memory usage is high"
+          description: "BEAM VM is using more than 1.6GB of memory for 10 minutes. Current usage: {{ $value }}GB"
+          playbook: "Check for memory leaks, restart if needed"
+
+      # Medium: High process count
+      - alert: HighProcessCount
+        expr: |
+          vm_total_processes > 100000
+        for: 10m
+        labels:
+          severity: medium
+        annotations:
+          summary: "BEAM process count is high"
+          description: "BEAM VM has more than 100k processes. Current count: {{ $value }}"
+          playbook: "Investigate process leaks, check for runaway GenServers"
+
+      # Low: Metrics endpoint down
+      - alert: MetricsEndpointDown
+        expr: |
+          up{job="global_sovereign"} == 0
+        for: 5m
+        labels:
+          severity: low
+        annotations:
+          summary: "Metrics endpoint is unreachable"
+          description: "Prometheus cannot scrape metrics from the application"
+          playbook: "Restart PromEx GenServer, check application health"
+
+      # Low: GraphQL slow queries
+      - alert: SlowGraphQLQueries
+        expr: |
+          histogram_quantile(0.95,
+            rate(absinthe_execute_duration_seconds_bucket[5m])
+          ) > 2.0
+        for: 10m
+        labels:
+          severity: low
+        annotations:
+          summary: "GraphQL queries are slow"
+          description: "95th percentile GraphQL query time is above 2 seconds. Current p95: {{ $value }}s"
+          playbook: "Review slow queries in Jaeger, add indexes or optimize resolvers"

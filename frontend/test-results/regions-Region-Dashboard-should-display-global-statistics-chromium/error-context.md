@@ -1,0 +1,240 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "Global Infrastructure" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Our multi-region infrastructure spans 6 strategic locations worldwide, ensuring low latency and high availability for all participants.
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: Total Regions
+      - generic [ref=e11]: "6"
+      - generic [ref=e12]: All operational ✓
+    - generic [ref=e13]:
+      - generic [ref=e14]: Average Uptime
+      - generic [ref=e15]: 99.95%
+      - generic [ref=e16]: Last 30 days
+    - generic [ref=e17]:
+      - generic [ref=e18]: Global Coverage
+      - generic [ref=e19]: 100%
+      - generic [ref=e20]: 6 continents
+  - generic [ref=e21]:
+    - generic [ref=e22]:
+      - heading "🗺️ Global Infrastructure Dashboard" [level=2] [ref=e23]
+      - paragraph [ref=e24]: 6 Regions • Multi-DC Replication • Phase 4 Architecture
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: 🌍
+        - generic [ref=e28]:
+          - generic [ref=e29]: "195"
+          - generic [ref=e30]: Countries
+      - generic [ref=e31]:
+        - generic [ref=e32]: 🚀
+        - generic [ref=e33]:
+          - generic [ref=e34]: "723"
+          - generic [ref=e35]: Active Projects
+      - generic [ref=e36]:
+        - generic [ref=e37]: ⚡
+        - generic [ref=e38]:
+          - generic [ref=e39]: 31ms
+          - generic [ref=e40]: Avg Latency
+      - generic [ref=e41]:
+        - generic [ref=e42]: ✅
+        - generic [ref=e43]:
+          - generic [ref=e44]: 99.8%
+          - generic [ref=e45]: Global Uptime
+    - generic [ref=e46]:
+      - button "Europe (Amsterdam) ams healthy 📍 Amsterdam, Netherlands 12ms Latency 44 Countries 156 Projects 99.9% Uptime" [ref=e47]:
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]:
+              - heading "Europe (Amsterdam)" [level=3] [ref=e52]
+              - paragraph [ref=e53]: ams
+            - generic [ref=e54]: healthy
+          - generic [ref=e55]: 📍 Amsterdam, Netherlands
+          - generic [ref=e56]:
+            - generic [ref=e57]:
+              - generic [ref=e58]: 12ms
+              - generic [ref=e59]: Latency
+            - generic [ref=e60]:
+              - generic [ref=e61]: "44"
+              - generic [ref=e62]: Countries
+            - generic [ref=e63]:
+              - generic [ref=e64]: "156"
+              - generic [ref=e65]: Projects
+            - generic [ref=e66]:
+              - generic [ref=e67]: 99.9%
+              - generic [ref=e68]: Uptime
+      - button "Americas East (Ashburn) iad healthy 📍 Ashburn, Virginia, USA 18ms Latency 35 Countries 142 Projects 99.8% Uptime" [ref=e69]:
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - generic [ref=e73]:
+              - heading "Americas East (Ashburn)" [level=3] [ref=e74]
+              - paragraph [ref=e75]: iad
+            - generic [ref=e76]: healthy
+          - generic [ref=e77]: 📍 Ashburn, Virginia, USA
+          - generic [ref=e78]:
+            - generic [ref=e79]:
+              - generic [ref=e80]: 18ms
+              - generic [ref=e81]: Latency
+            - generic [ref=e82]:
+              - generic [ref=e83]: "35"
+              - generic [ref=e84]: Countries
+            - generic [ref=e85]:
+              - generic [ref=e86]: "142"
+              - generic [ref=e87]: Projects
+            - generic [ref=e88]:
+              - generic [ref=e89]: 99.8%
+              - generic [ref=e90]: Uptime
+      - button "Asia-Pacific (Sydney) syd healthy 📍 Sydney, Australia 45ms Latency 16 Countries 78 Projects 99.7% Uptime" [ref=e91]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - heading "Asia-Pacific (Sydney)" [level=3] [ref=e96]
+              - paragraph [ref=e97]: syd
+            - generic [ref=e98]: healthy
+          - generic [ref=e99]: 📍 Sydney, Australia
+          - generic [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]: 45ms
+              - generic [ref=e103]: Latency
+            - generic [ref=e104]:
+              - generic [ref=e105]: "16"
+              - generic [ref=e106]: Countries
+            - generic [ref=e107]:
+              - generic [ref=e108]: "78"
+              - generic [ref=e109]: Projects
+            - generic [ref=e110]:
+              - generic [ref=e111]: 99.7%
+              - generic [ref=e112]: Uptime
+      - button "Asia (Singapore) sin healthy 📍 Singapore 38ms Latency 24 Countries 95 Projects 99.9% Uptime" [ref=e113]:
+        - generic [ref=e115]:
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - heading "Asia (Singapore)" [level=3] [ref=e118]
+              - paragraph [ref=e119]: sin
+            - generic [ref=e120]: healthy
+          - generic [ref=e121]: 📍 Singapore
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]: 38ms
+              - generic [ref=e125]: Latency
+            - generic [ref=e126]:
+              - generic [ref=e127]: "24"
+              - generic [ref=e128]: Countries
+            - generic [ref=e129]:
+              - generic [ref=e130]: "95"
+              - generic [ref=e131]: Projects
+            - generic [ref=e132]:
+              - generic [ref=e133]: 99.9%
+              - generic [ref=e134]: Uptime
+      - button "Americas West (San Francisco) sfo healthy 📍 San Francisco, California, USA 22ms Latency 28 Countries 118 Projects 99.8% Uptime" [ref=e135]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - heading "Americas West (San Francisco)" [level=3] [ref=e140]
+              - paragraph [ref=e141]: sfo
+            - generic [ref=e142]: healthy
+          - generic [ref=e143]: 📍 San Francisco, California, USA
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - generic [ref=e146]: 22ms
+              - generic [ref=e147]: Latency
+            - generic [ref=e148]:
+              - generic [ref=e149]: "28"
+              - generic [ref=e150]: Countries
+            - generic [ref=e151]:
+              - generic [ref=e152]: "118"
+              - generic [ref=e153]: Projects
+            - generic [ref=e154]:
+              - generic [ref=e155]: 99.8%
+              - generic [ref=e156]: Uptime
+      - button "Africa (Johannesburg) jnb healthy 📍 Johannesburg, South Africa 52ms Latency 48 Countries 134 Projects 99.6% Uptime" [ref=e157]:
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - heading "Africa (Johannesburg)" [level=3] [ref=e162]
+              - paragraph [ref=e163]: jnb
+            - generic [ref=e164]: healthy
+          - generic [ref=e165]: 📍 Johannesburg, South Africa
+          - generic [ref=e166]:
+            - generic [ref=e167]:
+              - generic [ref=e168]: 52ms
+              - generic [ref=e169]: Latency
+            - generic [ref=e170]:
+              - generic [ref=e171]: "48"
+              - generic [ref=e172]: Countries
+            - generic [ref=e173]:
+              - generic [ref=e174]: "134"
+              - generic [ref=e175]: Projects
+            - generic [ref=e176]:
+              - generic [ref=e177]: 99.6%
+              - generic [ref=e178]: Uptime
+    - generic [ref=e179]:
+      - heading "Network Topology" [level=3] [ref=e180]
+      - generic [ref=e182]:
+        - paragraph [ref=e183]:
+          - text: 🔗
+          - strong [ref=e184]: "Multi-Region Replication:"
+          - text: PostgreSQL async + Cassandra multi-DC (RF=3)
+        - paragraph [ref=e185]:
+          - text: ⚡
+          - strong [ref=e186]: "Edge Caching:"
+          - text: NGINX/Varnish at each regional node
+        - paragraph [ref=e187]:
+          - text: 📡
+          - strong [ref=e188]: "Event Streaming:"
+          - text: NATS JetStream with geo-distributed topics
+        - paragraph [ref=e189]:
+          - text: 🔐
+          - strong [ref=e190]: "Security:"
+          - text: WireGuard mesh network + mTLS between regions
+  - generic [ref=e191]:
+    - heading "Infrastructure Details" [level=2] [ref=e192]
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - heading "Multi-Region Architecture" [level=3] [ref=e195]
+        - paragraph [ref=e196]: Our infrastructure is distributed across strategic locations to ensure optimal performance and resilience. Each region operates independently while maintaining real-time synchronization with the global network.
+      - generic [ref=e197]:
+        - heading "Features" [level=3] [ref=e198]
+        - list [ref=e199]:
+          - listitem [ref=e200]: Real-time health monitoring and alerting
+          - listitem [ref=e201]: Automatic failover and load balancing
+          - listitem [ref=e202]: Edge caching for improved latency
+          - listitem [ref=e203]: Distributed data replication
+          - listitem [ref=e204]: Geographic routing optimization
+          - listitem [ref=e205]: 24/7 monitoring and support
+      - generic [ref=e206]:
+        - heading "Region Coverage" [level=3] [ref=e207]
+        - generic [ref=e208]:
+          - generic [ref=e209]:
+            - text: AMS
+            - generic [ref=e210]:
+              - generic [ref=e211]: Amsterdam, Netherlands
+              - generic [ref=e212]: Europe
+          - generic [ref=e213]:
+            - text: IAD
+            - generic [ref=e214]:
+              - generic [ref=e215]: Virginia, USA
+              - generic [ref=e216]: North America
+          - generic [ref=e217]:
+            - text: SYD
+            - generic [ref=e218]:
+              - generic [ref=e219]: Sydney, Australia
+              - generic [ref=e220]: Oceania
+          - generic [ref=e221]:
+            - text: SIN
+            - generic [ref=e222]:
+              - generic [ref=e223]: Singapore
+              - generic [ref=e224]: Asia
+          - generic [ref=e225]:
+            - text: SFO
+            - generic [ref=e226]:
+              - generic [ref=e227]: San Francisco, USA
+              - generic [ref=e228]: North America West
+          - generic [ref=e229]:
+            - text: JNB
+            - generic [ref=e230]:
+              - generic [ref=e231]: Johannesburg, South Africa
+              - generic [ref=e232]: Africa
+```

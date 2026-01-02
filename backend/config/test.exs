@@ -20,3 +20,12 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+# Disable PromEx/telemetry poller during tests to avoid repo lookup errors
+config :global_sovereign, GlobalSovereign.PromEx,
+  disabled: true,
+  manual_metrics_start_delay: :no_delay,
+  metrics_server: :disabled
+
+config :opentelemetry,
+  processors: []

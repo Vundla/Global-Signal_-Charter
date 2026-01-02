@@ -1,0 +1,7 @@
+[
+  verbose: true,
+  private: false,
+  skip_files: ["test/"],
+  ignore: ["Config.HTTPS"],
+  ignore_files: ["lib/global_sovereign_web/plugs/rate_limiter.ex:33", "lib/global_sovereign_web/resolvers/phase4.ex:127"]
+]

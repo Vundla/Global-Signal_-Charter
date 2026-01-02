@@ -3,12 +3,38 @@ defmodule GlobalSovereignWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug GlobalSovereignWeb.Plugs.RateLimiter
+  end
+
+  # Metrics endpoint for Prometheus scraping
+  forward "/metrics", PromEx.Plug
+
+  # Phase 4: GraphQL API (Public queries, authenticated mutations)
+  scope "/api" do
+    pipe_through :api
+
+    forward "/graphql", Absinthe.Plug,
+      schema: GlobalSovereignWeb.Schema,
+      context: &GlobalSovereignWeb.GraphQL.context/1
+
+    if Mix.env() == :dev do
+      forward "/graphiql", Absinthe.Plug.GraphiQL,
+        schema: GlobalSovereignWeb.Schema,
+        interface: :playground
+    end
   end
 
   scope "/api", GlobalSovereignWeb do
     pipe_through :api
 
     get "/healthcheck", HealthController, :index
+  end
+
+  scope "/api/auth", GlobalSovereignWeb.API do
+    pipe_through :api
+
+    post "/login", AuthController, :login
+    post "/register", AuthController, :register
   end
 
   scope "/api", GlobalSovereignWeb.API, as: :api do
